@@ -83,7 +83,7 @@ export default {
         ...this.$route.query
       }
       delete editedRouteQuery['actions_sheet']
-      this.$router.replace({ query: editedRouteQuery})
+      this.$router.push({ query: editedRouteQuery})
       this.actionsSheetModalVisible = false
 
     }
